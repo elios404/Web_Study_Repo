@@ -1,0 +1,141 @@
+html {
+    font-size: 15px;
+}
+
+/* root에 기본이되는 요소, 정하지 않아도 기본 폰트사이즈가 있다. */
+
+section {
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+}
+
+/* %로 크기를 조절할 때에는 부모의 비율로 계산할 수 있다.
+ 꼭 정확한 건 아니지만 인라인 요소 같은 건 그 인라인 요소의 비율로 계산한다. line-height 는 그 줄의 글자크기에 영향을 받는다. */
+
+div {
+    background-color: cadetblue;
+    width: 75%;
+    height: 50%;
+}
+
+/* em은 글자 크기에서는 부모의 특성을 물려받는다 2em은 부모의 2배 크기 
+그러나 패딩 같은 경우는 자기 요소의 특성을 사용한다... 개판이다.
+글꼴의 크기는 부모에게서 가져오고, 나머지 요소들은 자기 자신의 글꼴 크기에 비례해서 적용하는 듯
+em은 중첩되는 경우 크기가 계속 커지거나 작아질 수 있다. rem이 필요한 시점*/
+
+
+h1 {
+    font-size: 30px;
+    border: 1px solid black;
+    line-height: 200%;
+    /* == 80px */
+}
+
+h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+article {
+    font-size: 20px;
+}
+
+p {
+    font-size: 0.75em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.3em 1em;
+    border-radius: 0.5em;
+    background-color: olive;
+    color: white;
+}
+
+/* rem은 Root를 기반으로 정해진다. */
+
+ul {
+    font-size: 1.2em;
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
+
+/* 
+html {
+    font-size: 30px;
+}
+#percentages {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color:#e5989b;
+    width: 70%;
+    height: 20%;
+}
+
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+#ems h3 {
+    font-size: 1.5em;
+}
+#ems p {
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+#ems ul {
+    font-size: 1.5em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 1.5rem;
+}
+
+#rems button{
+    font-size: 1.5rem;
+}
+
+ */

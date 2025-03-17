@@ -1,0 +1,90 @@
+/* * {
+    color: olive;
+    background-color: antiquewhite;
+} */
+
+/* "*" is a selector which selects whole elements in the page */
+
+body {
+    background-color: #fefae0;
+}
+
+button {
+    font-size: 20px;
+    background-color: #dda15e;
+}
+
+#SignUp {
+    background-color: #3a5a40;
+    color: #fefae0;
+}
+
+/* ,를 통해서 여러 개를 한 번에 선택 가능 */
+h1, h2 {
+    color: #283618;
+}
+
+.tag {
+    background-color: #780000;
+    color: #fefae0;
+}
+
+.post a {
+    color: olive;
+    text-decoration: none;
+}
+
+footer a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+/* + 는 바로 뒤에 나오는 동일 계층의 요소들을 선택 */
+
+h2+button {
+    background-color: #780000;
+    font-size: 15px;
+    color: #fefae0;
+}
+
+/* > 는 바로 아래 단계 계층의 요소인 경우 선택 */
+
+footer>a {
+    font-size: 20px;
+}
+
+input[type="password"] {
+    color: crimson;
+}
+
+.post button:hover {
+    background-color: #dda15e;
+    color: #780000;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.post button:active {
+    color: black;
+    font-weight: bold;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #e8c399;
+}
+
+.post h2::first-letter {
+    font-size: 40px;
+}
+
+.post::selection {
+    background-color: yellowgreen;
+}
+
+button:hover {
+    background-color: olive;
+    color: #fefae0;
+}

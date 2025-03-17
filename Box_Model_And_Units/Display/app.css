@@ -1,0 +1,25 @@
+h1 {
+    background-color: olivedrab;
+    border: 3px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 50px;
+}
+
+span {
+    background-color: olive;
+    border: 1px solid black;
+    margin: 100px;
+    padding: 10px;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+/* display none을 하면 문서에는 있지만, 화면에는 보이지 않는다. */

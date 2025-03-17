@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    background-color: #219ebc;
+    width: 150px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+span {
+    margin-left: 30px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #8ecae6;
+}
+
+#one {
+    background-color: #a3b18a;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    /* 위에서 설정한 너비 높이를 경계선 박스 크기로 맞추기*/
+    margin-left: 50px;
+}
+
+#two {
+    background-color: #588157;
+    border-color: #264653;
+    border-width: 5px;
+    border-style: dashed solid;
+    border-left-color: black;
+    padding-right: 30px;
+    margin: 30px 50px;
+}
+
+#three {
+    background-color: #3a5a40;
+    border: 5px solid rgb(255, 68, 0);
+    box-sizing: border-box;
+    border-right-style: dotted;
+    border-radius: 25%;
+    margin-bottom: 100px;
+}
+
+button {
+    padding: 10px 30px 20px 10px;
+}

@@ -1,0 +1,23 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav {
+    text-transform: uppercase;
+    width: 30%;
+    border-bottom: 2px solid grey;
+    margin-left: calc(10%/6);
+    padding: 1em 0;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* .orbitron-<uniquifier> {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */

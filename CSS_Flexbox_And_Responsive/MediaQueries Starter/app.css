@@ -1,20 +1,96 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    transition: 1s;
 }
 
-h1 {
-    font-size: 6em;
-    text-align: center;
-}
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between
 }
 
-ul,li {
+
+ul, li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+ul {
+    /* border: 1px solid black; */
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
+
+/* 안에 크기는 min-width or max-width 로 일반적으로 사용한다. */
+/* @media (min-width:800px) and (max-width:1200px) {
+    h1 {
+        color: olive;
+    }
+} */
+
+/* 조건을 적는 순서가 중요하다. */
+
+h1 {
+    color: red;
+    transition: 1s;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        color: orange;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        color: rgb(237, 237, 61);
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: green;
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        color: skyblue;
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        color: black;
+        font-size: 6em;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: #fdf0d5;
+    }
+}

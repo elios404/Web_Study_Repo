@@ -1,14 +1,50 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 h1 {
     text-align: center;
 }
+
 #container {
     background-color: #003049;
     width: 90%;
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    /*주 축을 정하는 요소, 기본은 flex-direction: row(-reverse) , column(-reverse);*/
+    justify-content: center;
+    /*주 축을 기본으로 어떻게 정렬시킬 것인지 정하는 요소, 기본은 justify-content: flex-start*/
+    /* row로 하고 flex-end를 하는 것과 row-reverse, flext-start를 하는 것은 비슷해 보일 수 있으나 축이 어디서 어느방향으로 시작되는지가 다르다.*/
+    /* center, space-between, space-around space-evenly 등 도 있다. */
+    /* flex-wrap: wrap; */
+    /* flex-wrap 을 통해서 화면 크기가 변화하면서 요소 재정렬이 필요할 때 사용할 수 있다. */
+    /* wrap, wrap-reverse 두 가지 밖에 없다. reverse를 하면 cross-axis의 방향이 바뀐다.*/
+    align-items: flex-start;
+    /* align-items 를 통해서 교차축에 따라서 아이템을 배치할 수 있다. */
+    /* 한 마디로 justify-content가 main-aixs를 기준으로 요소를 정렬한다면, align-item은 cross-aixs를 기준으로 요소를 정렬 */
+    /* align-content: space-between; */
+    /* wrap을 통해서 재정렬을 할 때 cross aixs에서 넘어간 요소를 어떻게 배치할 것인지..? */
 }
 
+#container div {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    text-align: center;
+    flex-basis: 200px;
+    /*flex-basis는 주축을 기준으로 기본 크기를 정할 수 있다. (최초로 정하는 크기) */
+}
+
+div:nth-of-type(3) {
+    align-self: center;
+    /* align-self는 특정 요소 하나의 cross-axis에 대한 값을 지정할 줄 수 있다? */
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex: grow shrink basis 로 활용가능하다. */
+}

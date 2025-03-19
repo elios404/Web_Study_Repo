@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: #3a86ff;
+}
+
+
+nav {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-image: url(./icons/logo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+nav button {
+    margin: 0.5em;
+    background-color: white;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-family: "Orbitron", sans-serif;
+}
+
+nav button:hover {
+    color: #3a86ff;
+    font-weight: bold;
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+main>div {
+    background-color: white;
+    border-radius: 1em;
+    width: 70%;
+    max-width: 1000px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.option {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: calc(100%/3);
+}
+
+.option img {
+    width: 80%;
+    height: 30%;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.name {
+    border-bottom: 1px solid rgba(151, 149, 149, 0.503);
+    color: gray;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    padding-bottom: 1.5em;
+    width: 80%;
+    margin: 0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.explain1, .explain2 {
+    color: #0077b6;
+    font-weight: 500;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgba(151, 149, 149, 0.503);
+    text-align: center;
+    width: 80%;
+    height: 10%;
+    margin: 0;
+    padding: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 900;
+    color: #0077b6;
+    margin: 0;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    /* border: 1px solid black; */
+}
+
+.register_button {
+    background-color: white;
+    border: 2px solid #0077b6;
+    color: #0077b6;
+    border-radius: 1em;
+    padding: 1em 3em;
+}
+
+.register_button:hover {
+    background-color: #0077b6;
+    color: white;
+    font-weight: 600;
+}
+
+/* 흰색 박스가 750 정도면 괜찮다. 그 이후로는 세로로 변경 */
+
+@media (max-width:1100px) {
+    nav {
+        height: 8vh;
+    }
+
+    main {
+        height: 2400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>div {
+        background-color: white;
+        border-radius: 1em;
+        width: 100%;
+        height: 2400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .option {
+        min-width: 330px;
+        width: 90%;
+    }
+
+    .name, .explain1, .explain2 {
+        width: 95%;
+        font-size: 1.3em;
+    }
+}

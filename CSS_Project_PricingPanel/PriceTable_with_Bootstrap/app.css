@@ -1,0 +1,13 @@
+body {
+    background-color: #00b4d8;
+}
+
+nav {
+    background-color: #00b4d8;
+}
+
+.pricetable {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+}

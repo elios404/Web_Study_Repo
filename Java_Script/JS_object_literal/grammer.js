@@ -1,7 +1,7 @@
 // java script의 object 는 다른 언어의 class 와 비슷하다고 생각된다. key and value로 구성된다.
 // 다시보니, 파이썬의 dictionary 와 비슷하다.
 // object 안에 키로 작성한 것은 숫자로 작성했더라도 전부 문자열로 변환하여 저장된다.
-// 객체안에 객체를 중첩할 수 있다.
+// 객체안에 객체를 중첩할 수 있다. 혹은 리스트 요소를 객체로 둘 수 있다.
 
 // object는 key : value, ... 식으로 구성된다. 
 const cheon = {
